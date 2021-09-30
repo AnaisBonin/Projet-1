@@ -1,14 +1,69 @@
-.ba-icones {
-    width: 2rem;
+html, body {
+    margin : 0;
 }
 
-.box-bonnes-adresses {
-    width: 4rem;
-    padding: 1rem;
+h1 {
+    font-size : 5em;
+    color : rgb(204,88,3);
+    text-shadow: 1px 1px rgb(40,17,1);
 }
 
-.bonnes-adresses {
-    background-color: #ffb627;
-    width: 100%;
-    padding: 5rem;
+#slideshow {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width:100%;
+    height: 30vh;
+    background-position: center center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    backface-visibility: hidden;
+    animation: slideShow 20s linear infinite;
+    animation-timing-function: ease-in-out;
+    background-color: url('images/Versailles1.jpeg');
+}
+
+@keyframes slideShow {
+    0% {
+        background-image: url('images/Versailles1.jpeg')
+    }
+    33% {
+        background-image: url('images/Versailles2.jpeg')
+    }
+    66% {
+        background-image: url('images/Versailles3.jpeg')
+    }
+    100% {
+        background-image: url('images/Versailles1.jpeg')
+    }
+}
+
+#presentation {
+    display: inline-block;
+    width: 70%;
+    margin-left:15%;
+    margin-right:15%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+ }
+
+p {
+    /*border: 2px solid rgb(40,17,1);*/
+    background-color: rgb(255,182,39);
+    text-align:justify;
+    padding: 20px;
+}
+
+.ronde {
+    border-radius : 50%;
+    width:30%;
+}
+
+#liens1 {
+    display:flex;
+    justify-content:space-around;
+}
+#liens2 {
+    display:flex;
+    justify-content:center;
 }
