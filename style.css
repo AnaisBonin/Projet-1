@@ -1,14 +1,127 @@
-.ba-icones {
-    width: 2rem;
+/* STYLE GENERAL == START */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.box-bonnes-adresses {
-    width: 4rem;
-    padding: 1rem;
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+p {
+    color: #281101;
+}
+
+p, ul {
+    font-family: 'Cormorant Garamond';
+}
+
+h2 {
+    color: #cc5803;
+    font-family: 'Laila';
+    font-weight: normal;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+}
+
+/* STYLE GENERAL == END
+.
+.
+.
+.
+STYLE FLEX == START */
+
+/* icone à gauche */
+.flex-main {
+    display: flex;
+    align-items: start;
+}
+
+/* icone à droite */
+.flex-cross {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: start;
+}
+
+.flex-cross p, .flex-cross ul {
+    text-align: right;
+}
+
+/* STYLE FLEX == END 
+.
+.
+.
+.
+STYLE BONNES ADRESSES == START 
+.
+.
+Organisation dans html :
+<section class="bonnes-adresses">
+        <h2>Bonnes adresses :</h2>
+        <div class="box-bonnes-adresses flex-main"> // flex-axis
+            <img src="" alt="icone cocktail" class="ba-icones"/>
+            <div>
+                <p>Lorem</p>
+                <ul class="adresses">
+                    <li> * 3
+                </ul>
+            </div>
+        </div>
+        <div class="map-villes">
+*/
 
 .bonnes-adresses {
     background-color: #ffb627;
     width: 100%;
-    padding: 5rem;
+    padding: 1rem;
 }
+
+.box-bonnes-adresses {
+    width: 90vw;
+    padding: 1rem 0;
+}
+
+.ba-icones {
+    width: 3rem;
+    margin: 1rem 0;
+    color: #cc5803;
+}
+
+.adresses {
+    padding: 0px;
+    list-style-type: none;
+    margin: 1rem 0;
+    color: white;
+    font-size: 1rem;
+}
+
+.flex-main div {
+    padding-right: 3rem;
+    padding-left: 1rem;
+}
+
+.flex-cross div {
+    padding-right: 1rem;
+    padding-left: 3rem;
+}
+
+.map-villes {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe {
+    width:90vw;
+    height: 50vh;
+}
+
+/* STYLE BONNES ADRESSES == END */
