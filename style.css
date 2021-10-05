@@ -12,41 +12,38 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Cormorant Garamond';
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 10vw;
-}
-
-p {
-    color: #281101;
+  color: #281101;
+  font-family: 'Cormorant Garamond';
 }
 
 h1 {
-  font-size : 4em;
-  color : rgb(204,88,3);
-  font-family: 'Laila', sans-serif;
-  text-shadow: 1px 1px rgb(40,17,1);
-  margin: 2rem auto;
   text-align: center;
+  margin: 2rem 0;
+  font-size : 2em;
+  color : #ff9800;
+  font-family: 'Laila', sans-serif;
 }
 
 h2 {
     color: #cc5803;
-    font-family: 'Laila';
+    font-family: 'Laila', sans-serif;
     font-weight: normal;
     font-size: 1.5rem;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-    padding-left: 3rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1rem;
 }
 
-ul, nav {
-  list-style: none;
+h3 {
+  font-family: 'Laila', serif;
+  font-weight: normal;
+  color: #ff9800;
+}
+
+ul, nav, li {
+  list-style-type: none;
 }
 
 a {
@@ -54,13 +51,17 @@ a {
   cursor: pointer;
 }
 
+main {
+  padding: 0 7vw;
+}
+
 .space-before {
     margin-top: 3rem; 
 }
 
 .filet-orange {
-    margin: 0 15vw;
-    width: 70vw;
+    margin: 2.5rem 0;
+    width: 100%;
     border-bottom: 2px solid #cc5803;
 }
 /* 
@@ -116,40 +117,48 @@ a {
 ****
 ***
 **
+*
+**
+*** Construction html
+**
+*
+  <nav class="nav-container">
+    <ul>
+      <li><a href="index.html">Home</a></li> * 3
 */
 
 .nav-container {
-  width: 100%;
-  height: 40px;
-  background-color: #e2711d;
+  width: 100vw;
+  height: 3em;
+  padding: 1rem 2rem;
+  background-color: #cc5803;
+  color: white;
+}
+
+.nav-container ul {
   display: flex;
-  justify-content: space-between;
-  position: fixed;
-  top: 0;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 100;
+  align-items: center;
+  height: 100%;
 }
 
 .nav-container ul li {
-  display: inline-block;
-  vertical-align: top;
-  padding: 0 8px;
+  padding: 0 1rem;
 }
+
 .nav-container a {
-  text-decoration: none;
   color: white;
+  font-family: 'Laila';
 }
 .nav-container a:hover {
-  color: blue;
+  color:#ffb627;
 }
 
 .nav-container div {
-  margin-top: auto;
-  margin-bottom: auto;
   margin-left: 1em;
+}
+
+.nav-container ul li .current-page {
+  color: #ffc971;
 }
 
 
@@ -165,25 +174,120 @@ a {
 **
 ***
 ****
+****** STYLE INDEX = START
+*****
+***
+**
+*/
+
+#slideshow {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  width:100vw;
+  height: 30vh;
+  background-image: url('assets/img/Versailles1.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  animation: slideShow 20s linear infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes slideShow {
+  0% {
+      background-image: url('assets/img/Versailles1.jpeg')
+  }
+  33% {
+      background-image: url('assets/img/Versailles2.jpeg')
+  }
+  66% {
+      background-image: url('assets/img/Versailles3.jpeg')
+  }
+  100% {
+      background-image: url('assets/img/Versailles1.jpeg')
+  }
+}
+
+.index-presentation {
+  margin: 4rem 0;
+}
+
+.index-main {
+  margin-bottom: 4rem;
+}
+
+.h1-welcome {
+  font-size: 2.5rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+.ronde {
+  border-radius : 50%;
+  width: 35vw;
+  border: 2px solid #ffb627;
+}
+
+.index-cercles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.index-cercle-2 {
+  display:flex;
+  justify-content:space-around;
+  width: 100%;
+}
+.index-cercle-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  width: 100vw;
+  margin: 1rem;
+}
+
+/*
+**
+***
+****
+***** STYLE INDEX == END
+****
+***
+**
+*
+**
+***
+****
 ***** STYLE VILLE CAROUSEL == START 
 ****
 ***
 **
 */
+
 .carousel-items {
     display: flex;
     overflow-x: scroll;
     flex: 1 0 250px;
-    padding: 1rem 0;
-    margin-left: 1rem;
     scroll-snap-align: start;
     scroll-snap-type: x mandatory;
   }
 
   .carousel-item {
-    flex: 1 0 250px;
-    margin-left: 1rem;
+    flex: 1 0 100%;
+    max-width:100%;
+    max-height:100%;
+    margin: 0 0.5rem;
   }
+
+  .carousel-item img {
+    max-width: 100%;
+    height: 237px;
+   }
 
   ::-webkit-scrollbar-track {
     background-color: #F5F5F5;
@@ -199,67 +303,74 @@ a {
     border-radius: 3px;
   }
   
-  
   .carousel:hover {
     max-width: 100% !important;
     overflow-x: hidden !important;
   }
 
-  .carousel img {
-    width: 500px;
-    height: 330px;
-   }
+/*
+**
+***
+****
+***** STYLE VILLE CAROUSSEL == END
+****
+***
+**
+*
+**
+***
+****
+***** STYLE VILLE PRESENTATION == START 
+****
+***
+**
+*/
 
   .presentation {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 5rem;
+    margin: 3rem 0;
+  }
+
+  .portrait img {
+    width: 80%;
+    height: auto;
   }
 
   .information {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 15rem;
+    width: 40%;
   }
 
-  .portrait {
-    background-size: cover;
-    background-position:center;
-    width: 20vw;
-    height: 20vh;
-    background-image: url("assets/img/woman.jpg");
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  @media screen and (max-width:640px){
+  /* @media screen and (max-width:640px){
     .portrait {
       width: 15vw;
       height: 20vh;
     }
-  }
+  } */
     
   .info-ville {
     display: flex;
+    margin: 0.5rem 1rem;
   }
 
   .info-ville svg {
-    height: 1.5rem; 
-    width: 4rem;
+    width: 1.5rem;
+    margin-right: 0.5rem;
   } 
 
    article {
-    font-size: 1.4rem;
-    border : solid;
+    font-size: 1rem;
+    border : 1px solid #281101;
     text-align: center;
     display: flex;
     min-height: 15rem;
     max-height: fit-content;
     background-color: #ffb627;
-    width: 50%;
+    width: 60%;
     padding: 1rem;
   }
 
@@ -267,7 +378,37 @@ a {
 **
 ***
 ****
-***** STYLE VILLE CAROUSEL == END 
+***** STYLE VILLE PRESENTATION == END 
+****
+***
+**
+*
+**
+***
+****
+***** STYLE TOP 5 == START 
+****
+***
+**
+*/
+
+.top-5 {
+  margin: 3rem 0;
+}
+
+.top-5 p {
+  color: #281101;
+  font-size: 3rem;
+  min-height: 10rem;
+  text-align: center;
+}
+
+
+/* 
+**
+***
+****
+***** STYLE TOP 5 == END 
 ****
 ***
 **
@@ -301,9 +442,10 @@ a {
 */
 
 .bonnes-adresses {
-    background-color: #ffb627;
     width: 100vw;
-    padding: 1rem;
+    padding: 2rem 1rem;
+    margin: -7vw;
+    background-color: #ffb627;
 }
 
 .box-bonnes-adresses {
@@ -379,15 +521,26 @@ iframe {
         <p class="info-event">
 */
 
+.events{
+  padding-top: 2rem;
+}
+
+.box-events {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
 .box-event {
-    margin-bottom: 2rem;
+    margin: 1rem 0;
 }
 
 .date-event {
     display: flex;
     align-items: center;
     width: 3.5rem;
-    height: 3.5rem;
+    height: 4rem;
     border-radius: 50%;
     background-color: #cc5803;
     border: 2px dotted #281101;
@@ -401,7 +554,7 @@ iframe {
 
 .info-event {
     padding-right: 15vw;
-    padding-left: 1rem;
+    padding-left: 1.5rem;
 }
 
 /* 
@@ -434,8 +587,23 @@ iframe {
             </div>
 */
 
-  
-  /*!!!!!!!!!!!!!!!! ECRIRE Code LIENS EXTERNES  */
+.plus-infos{
+  margin: 2rem 0;
+}
+
+.box-info {
+  align-items: center;
+}
+
+.lien-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.5rem;
+}
+
+.lien-info a:hover {
+  color: #ff9800;
+}
 
 
 /* 
@@ -456,33 +624,24 @@ iframe {
 **
 */
 
-.main {
-  display: flex;
-  position: relative;
-  top: 100px;
-  justify-content: space-around;
-  flex-wrap: wrap;
+.contacts {
+  padding: 3rem 0;
 }
 
 .contact-us {
-  padding: 0 16px;
-  width: 100%;
+  margin-bottom: 2rem;
 }
 
-.contact-us h3, .contact-us label {
-  padding-bottom: 1rem;
+form label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  color: #ff9800;
 }
 
-.contact-us label[for="name"] {
-  padding-top: 1rem;
-}
-
-form input {
-  padding: 8px;
-  line-height: 16px;
+form input, form select {
   display: block;
-  width: 95%;
-  margin-bottom: 20px;
+  min-width: 60%;
+  background-color: white;
 }
 
 form textarea {
@@ -491,46 +650,43 @@ form textarea {
   margin-bottom: 20px;
 }
 
-form label {
-  display: inline-block;
-  margin-bottom: 10px;
+form input, form textarea, form select {
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  line-height: 1rem;
+  border-color: #ffc971;
+  color: #281101;
+  border-radius: 5px;
 }
 
-.button {
-  width: 80%;
-  float: right;
+form #submit-button {
+  min-width: 7rem;
+  background-color: #ff9800;
+  border: 0;
+  color: white;
+  border-radius: 20px;
 }
 
-.map h3 {
-  padding-bottom: 16px;
+::placeholder, select option {
+  color: #ffc971;
 }
 
-.contenu-footer {
-  bottom: 0;
-  position: fixed;
-  background-color: #e2711d;
+.map {
+  margin-top: 4rem;
+
+}
+
+.map-container {
+  margin: 1rem 0;
+}
+
+.map-container iframe {
   width: 100%;
-  box-sizing: content-box;
-  border: solid dashed #0000;
-  display: flex;
-  justify-content: space-between;
-  padding: 8px;
+  height: 15rem;
+  border: 0; 
+  loading: lazy;
+  margin: 0;
 }
-
-.footer-contact {
-  width: 50%;
-}
-.liste-des-villes {
-  display: flex;
-  flex-flow: column wrap;
-  height: 100%;
-}
-
-.liste-des-villes li {
-  margin-right: 32px;
-}
-
-
 
 /*
 *
@@ -545,13 +701,75 @@ form label {
 **
 ***
 ****
+***** STYLE FOOTER == START
+****
+***
+**
+*/
+
+footer {
+  width: 100vw;
+  min-height: 10rem;
+  padding: 2rem;
+  background-color: #cc5803;
+  color: white;
+  font-family: 'Laila';
+}
+
+footer h3 {
+  font-weight: normal;
+  font-size: 1.1rem;
+}
+
+.contenu-footer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-contact {
+  width: 35%;
+  line-height: 2.5rem;
+}
+
+.liste-des-villes {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+  margin-right: 32px;
+  padding-left: 1rem;
+  line-height: 2rem;
+}
+
+footer a {
+  font-family: 'Laila';
+  color: white;
+}
+
+footer a:hover {
+  color: #ffb627;
+}
+
+
+/*
+*
+**
+***
+****
+***** STYLE FOOTER == END
+****
+***
+**
+*
+**
+***
+****
 ***** MEDIA QUERY == START
 ****
 ***
 **
 */ 
 
-@media screen and (min-width: 860px) {
+/* @media screen and (min-width: 860px) {
   .contact-us {
     width: 30%;
   }
@@ -572,73 +790,9 @@ form label {
     justify-content: space-between;
     padding: 8px;
   }
-}
+} */
 
 /* 
-
-Media Query == END
-
-STYLE INDEX = START*/
-
-#slideshow {
-  display: flex;
-  align-items:center;
-  justify-content: center;
-  width:100%;
-  height: 30vh;
-  background-position: center center;
-  background-size:cover;
-  background-repeat:no-repeat;
-  backface-visibility: hidden;
-  animation: slideShow 20s linear infinite;
-  animation-timing-function: ease-in-out;
-  background-color: url('images/Versailles1.jpeg');
-}
-
-@keyframes slideShow {
-  0% {
-      background-image: url('images/Versailles1.jpeg')
-  }
-  33% {
-      background-image: url('images/Versailles2.jpeg')
-  }
-  66% {
-      background-image: url('images/Versailles3.jpeg')
-  }
-  100% {
-      background-image: url('images/Versailles1.jpeg')
-  }
-}
-
-#presentation {
-  display: inline-block;
-  width: 80%;
-  margin-left:10%;
-  margin-right:10%;
-  margin-top: 0.3rem;
-  margin-bottom: 0.3rem;
-  background-color: rgb(255,182,39);
-  font-family: 'Cormorant Garamond', serif;
-  text-align:justify;
-  padding: 0.7rem;
-
-}
-
-.ronde {
-  border-radius : 50%;
-  width:25%;
-}
-
-#liens1 {
-  display:flex;
-  justify-content:space-around;
-}
-#liens2 {
-  display:flex;
-  justify-content:center;
-}
-
-/* STYLE INDEX = END
 **
 ***
 ****
