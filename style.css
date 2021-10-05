@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Cormorant Garamond';
 }
 
 body {
@@ -16,10 +17,6 @@ p {
     color: #281101;
 }
 
-p, ul {
-    font-family: 'Cormorant Garamond';
-}
-
 h2 {
     color: #cc5803;
     font-family: 'Laila';
@@ -28,6 +25,15 @@ h2 {
     padding-top: 1rem;
     padding-bottom: 2rem;
     padding-left: 3rem;
+}
+
+ul, nav {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* STYLE GENERAL == END
@@ -59,6 +65,47 @@ STYLE FLEX == START */
 .
 .
 .
+STYLE NAV == START */
+
+.nav-container {
+  width: 100%;
+  height: 40px;
+  background-color: #e2711d;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 100;
+}
+
+.nav-container ul li {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 8px;
+}
+.nav-container a {
+  text-decoration: none;
+  color: white;
+}
+.nav-container a:hover {
+  color: blue;
+}
+
+.nav-container div {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 1em;
+}
+
+
+/* STYLE NAV == END
+.
+
+
 STYLE BONNES ADRESSES == START 
 .
 .
@@ -124,4 +171,119 @@ iframe {
     height: 50vh;
 }
 
-/* STYLE BONNES ADRESSES == END */
+/* STYLE BONNES ADRESSES == END
+.
+.
+.
+.
+STYLE CONTACT == START */
+.main {
+  display: flex;
+  position: relative;
+  top: 100px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.contact-us {
+  padding: 0 16px;
+  width: 100%;
+}
+
+.contact-us h3, .contact-us label {
+  padding-bottom: 1rem;
+}
+
+.contact-us label[for="name"] {
+  padding-top: 1rem;
+}
+
+form input {
+  padding: 8px;
+  line-height: 16px;
+  display: block;
+  width: 95%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.button {
+  width: 80%;
+  float: right;
+}
+
+.map h3 {
+  padding-bottom: 16px;
+}
+
+.contenu-footer {
+  bottom: 0;
+  position: fixed;
+  background-color: #e2711d;
+  width: 100%;
+  box-sizing: content-box;
+  border: solid dashed #0000;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.footer-contact {
+  width: 50%;
+}
+.liste-des-villes {
+  display: flex;
+  flex-flow: column wrap;
+  height: 100%;
+}
+
+.liste-des-villes li {
+  margin-right: 32px;
+}
+
+
+
+/* 
+
+Media Query == START
+
+*/
+
+@media screen and (min-width: 860px) {
+  .contact-us {
+    width: 30%;
+  }
+  .button {
+    width: 30%;
+    float: right;
+  }
+
+  .contenu-footer {
+    bottom: 0;
+    position: fixed;
+    background-color: #e2711d;
+    width: 100%;
+    height: 100px;
+    box-sizing: content-box;
+    border: solid dashed #0000;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+  }
+}
+
+/* 
+
+Media Query == END
+
+*/
