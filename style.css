@@ -1,4 +1,12 @@
-/* STYLE GENERAL == START */
+/* 
+**
+***
+****
+***** STYLE GENERAL == START 
+****
+***
+**
+*/
 
 * {
     margin: 0;
@@ -46,17 +54,30 @@ a {
     width: 70vw;
     border-bottom: 2px solid #cc5803;
 
-/* STYLE GENERAL == END
-.
-.
-.
-.
-STYLE FLEX == START */
+/* 
+**
+***
+****
+***** STYLE GENERAL == END 
+****
+***
+**
+* 
+**
+***
+****
+***** STYLE FLEX == START 
+****
+***
+**
+*/
+
 
 /* icone à gauche */
+
 .flex-main {
-    display: flex;
-    align-items: start;
+  display: flex;
+  align-items: start;
 }
 
 /* icone à droite */
@@ -70,12 +91,23 @@ STYLE FLEX == START */
     text-align: right;
 }
 
-/* STYLE FLEX == END 
-.
-.
-.
-.
-STYLE NAV == START */
+/* 
+**
+***
+****
+***** STYLE FLEX == END 
+****
+***
+**
+*
+**
+***
+****
+***** STYLE NAV == START 
+****
+***
+**
+*/
 
 .nav-container {
   width: 100%;
@@ -112,14 +144,27 @@ STYLE NAV == START */
 }
 
 
-/* STYLE NAV == END
-.
-
-
-STYLE BONNES ADRESSES == START 
-.
-.
-Organisation dans html :
+/* 
+**
+***
+****
+***** STYLE NAV == END 
+****
+***
+**
+*
+**
+***
+****
+***** STYLE BONNES ADRESSES == START 
+****
+***
+**
+*
+**
+*** Organisation dans html :
+**
+*
 <section class="bonnes-adresses">
         <h2>Bonnes adresses :</h2>
         <div class="box-bonnes-adresses flex-main"> // flex-axis
@@ -133,6 +178,7 @@ Organisation dans html :
         </div>
         <div class="map-villes">
             <iframe>
+**
 */
 
 .bonnes-adresses {
@@ -183,15 +229,28 @@ iframe {
     margin: 1rem;
 }
 
-/* STYLE BONNES ADRESSES == END 
-.
-.
-.
-.
-STYLE EVENEMENTS == START
-.
-Structure html: 
-.
+
+/* 
+**
+***
+****
+***** STYLE BONNES ADRESSES == END 
+****
+***
+**
+*
+**
+***
+****
+***** STYLE EVENEMENTS == START 
+****
+***
+**
+*
+**
+*** Organisation dans html :
+**
+*
 <section class="events space-before">
     <h2>Evènements a ne pas manquer :</h2>
     <div class="box-event flex-main">
@@ -226,13 +285,27 @@ Structure html:
     padding-left: 1rem;
 }
 
-/* STYLE EVENEMENTS == END
-.
-  
-STYLE LIEN EXTERNES ==START  
-.
-Structure html: 
-.
+/* 
+**
+***
+****
+***** STYLE EVENEMENTS == END 
+****
+***
+**
+*
+**
+***
+****
+***** STYLE LIEN EXTERNES ==START 
+****
+***
+**
+*
+**
+*** Structure html: 
+**
+*
 <h2>Pour plus d'informations :</h2>
         <div class="box-info">
             <img src="assets/icones/games.svg" class="ba-icones"/>
@@ -245,11 +318,25 @@ Structure html:
   
   /*!!!!!!!!!!!!!!!! ECRIRE Code LIENS EXTERNES  */
 
-/* STYLE LIEN EXTERNES == END
- .
- .
- .
-STYLE CONTACT == START */
+
+/* 
+**
+***
+****
+***** STYLE LIEN EXTERNES == END
+****
+***
+**
+*
+**
+***
+****
+***** STYLE CONTACT == START
+****
+***
+**
+*/
+
 .main {
   display: flex;
   position: relative;
@@ -326,11 +413,24 @@ form label {
 
 
 
-/* 
-
-Media Query == START
-
-*/
+/*
+*
+**
+***
+****
+***** STYLE CONTACT == END
+****
+***
+**
+*
+**
+***
+****
+***** MEDIA QUERY == START
+****
+***
+**
+*/ 
 
 @media screen and (min-width: 860px) {
   .contact-us {
@@ -355,8 +455,12 @@ Media Query == START
   }
 }
 
-/* 
-
-Media Query == END
-
+/*
+**
+***
+****
+***** MEDIA QUERY == END
+****
+***
+**
 */
