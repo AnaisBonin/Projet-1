@@ -11,6 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 10vw;
 }
 
 p {
@@ -35,6 +36,15 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
+
+.space-before {
+    margin-top: 3rem; 
+}
+
+.filet-orange {
+    margin: 0 15vw;
+    width: 70vw;
+    border-bottom: 2px solid #cc5803;
 
 /* STYLE GENERAL == END
 .
@@ -122,11 +132,12 @@ Organisation dans html :
             </div>
         </div>
         <div class="map-villes">
+            <iframe>
 */
 
 .bonnes-adresses {
     background-color: #ffb627;
-    width: 100%;
+    width: 100vw;
     padding: 1rem;
 }
 
@@ -167,15 +178,77 @@ Organisation dans html :
 }
 
 iframe {
-    width:90vw;
+    width:100%;
     height: 50vh;
+    margin: 1rem;
 }
 
-/* STYLE BONNES ADRESSES == END
+/* STYLE BONNES ADRESSES == END 
 .
 .
 .
 .
+STYLE EVENEMENTS == START
+.
+Structure html: 
+.
+<section class="events space-before">
+    <h2>Evènements a ne pas manquer :</h2>
+    <div class="box-event flex-main">
+        <div class="date-event">
+            <p class="jour-event">15 <br> Nov</p>
+        </div>
+        <p class="info-event">
+*/
+
+.box-event {
+    margin-bottom: 2rem;
+}
+
+.date-event {
+    display: flex;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background-color: #cc5803;
+    border: 2px dotted #281101;
+}
+
+.jour-event {
+    text-align: center;
+    color: #ffb627;
+    font-size: 1.2rem;
+}
+
+.info-event {
+    padding-right: 15vw;
+    padding-left: 1rem;
+}
+
+/* STYLE EVENEMENTS == END
+.
+  
+STYLE LIEN EXTERNES ==START  
+.
+Structure html: 
+.
+<h2>Pour plus d'informations :</h2>
+        <div class="box-info">
+            <img src="assets/icones/games.svg" class="ba-icones"/>
+            <div class="lien-info">
+                <p>Office du tourisme</p>
+                <p><a>Lien URL</a></p>
+            </div>
+*/
+
+  
+  /*!!!!!!!!!!!!!!!! ECRIRE Code LIENS EXTERNES  */
+
+/* STYLE LIEN EXTERNES == END
+ .
+ .
+ .
 STYLE CONTACT == START */
 .main {
   display: flex;
