@@ -212,6 +212,9 @@ main {
 
 .index-presentation {
   margin: 4rem 0;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #ffb627;
 }
 
 .index-main {
@@ -636,7 +639,7 @@ iframe {
 form label {
   display: inline-block;
   margin-bottom: 0.5rem;
-  color: #ff9800;
+  color: #cc5803;
 }
 
 form input, form select {
@@ -710,7 +713,6 @@ form #submit-button {
 
 footer {
   width: 100vw;
-  min-height: 10rem;
   padding: 2rem;
   background-color: #cc5803;
   color: white;
@@ -725,6 +727,11 @@ footer h3 {
 .contenu-footer{
   display: flex;
   justify-content: space-between;
+}
+
+.contenu-footer-index {
+  display: flex;
+  justify-content: space-around;
 }
 
 .footer-contact {
