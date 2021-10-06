@@ -10,78 +10,68 @@
     <title>Contact</title>
 </head>
 <body>
-
-  <nav class="nav-container">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li>
-        <a href="" target="_blank"> Villes </a>
-      </li>
-      <li><a href="contact.html" target="_blank">Contact us</a></li>
-    </ul>
-  </nav>
-  <section class="main">
-    <div class="contact-us">
-      <h3>Contact us</h3>
-
-      <form method="post">
-
-        <label for="pays">Selectionnez la ville</label></br>
-        <select name="pays" id="pays">
-          <option value="">Choissiez la ville</option>
-          <option value="naples">Naples</option>
-          <option value="Antananavarino">Antananavarino</option>
-          <option value="versailles">Versailles</option>
-          <option value="Poitier">Poitier</option>
-          <option value="Grenoble">grenoble</option>
-        </select><br>
-
-        <label for="name"> Your name </label>
-        <input type="text" name="name" id="name" autofocus />
-
-        <label for="email"> You email </label>
-        <input type="text" name="email" id=name autofocus />
-
-        <label for="textarea">Your Message </label>
-        <textarea rows="8" cols="100" id="your message"></textarea>
-        <input class="button" id="submitButton" type="submit" name="submit" value="Submit" onclick="clickAlert()" />
-      </form>
-    </div>
-    <div class="map">
-      <h3>Retrouve nous</h3>
-      <div id="map-google" class="map-container">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2583.5708831325132!2d4.825140179415607!3d45.74636695999866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea4ac9e1fd2f%3A0xabc36e768b27c9a0!2sWild%20Code%20School%20-%20Formation%20d%C3%A9veloppeur%20web%20%26%20data%20analyst!5e0!3m2!1sfr!2sfr!4v1632993231793!5m2!1sfr!2sfr"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="contenu-footer">
-
-      <div class="footer-villes">
-        <h3>Nos villes</h3>
-        <ul class="liste-des-villes">
-          <li>🇮🇹<a href="">Naples</a></li>
-          <li>🇲🇬<a href="">Antananavarino</a></li>
-          <li>🇫🇷<a href="">Versailles</a></li>
-          <li>🇫🇷<a href="">Poitier</a></li>
-          <li>🇫🇷<a href="">Grenoble</a></li>
+  <header>
+    <nav class="nav-container">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="villes.html"> Villes </a></li>
+            <li><a href="contact.html" class="current-page">Contact us</a></li>
         </ul>
+    </nav>
+  </header>
+    <main>
+      <section class="contacts">
+        <div class="contact-us">
+          <h2>Contact us</h2>
+          <form method="post">
+            <label for="pays">Selectionnez la ville</label>
+            <select name="pays" id="pays">
+              <option value="">Choissiez la ville</option>
+              <option value="Antananavarino">Antananavarino</option>
+              <option value="Naples">Naples</option>
+              <option value="Poitier">Poitier</option>
+              <option value="Vancouver">Vancouver</option>
+              <option value="Versailles">Versailles</option>
+            </select>
+            <label for="name"> Renseignez votre prénom :</label>
+            <input type="text" name="name" id="name" placeholder="Prénom" autofocus />
+            <label for="lastnsame"> Renseignez votre nom :</label>
+            <input type="text" name="lastname" id="lastname" placeholder="Nom" autofocus />
+            <label for="email"> Renseignez votre adresse email :</label>
+            <input type="text" name="email" id=name placeholder="email" autofocus />
+            <label for="textarea">Quel est votre message ?</label>
+            <textarea rows="8" cols="100" id="your message" placeholder="Votre message"></textarea>
+            <input class="submit-button" id="submit-button" type="submit" name="submit" value="Submit" onclick="clickAlert()" />
+          </form>
+        </div>
+        <div class="map">
+          <h3>Retrouve nous</h3>
+          <div id="map-google" class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2583.5708831325132!2d4.825140179415607!3d45.74636695999866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea4ac9e1fd2f%3A0xabc36e768b27c9a0!2sWild%20Code%20School%20-%20Formation%20d%C3%A9veloppeur%20web%20%26%20data%20analyst!5e0!3m2!1sfr!2sfr!4v1632993231793!5m2!1sfr!2sfr">
+            </iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="contenu-footer">
+        <div class="footer-villes">
+          <p>Villes :</p>
+          <ul class="liste-des-villes">
+            <li>&#8250; 🇲🇬  <a href="villes.html">Antananavarino</a></li>
+            <li>&#8250; 🇮🇹  <a href="villes.html">Naples</a></li>
+            <li>&#8250; 🇫🇷  <a href="villes.html">Poitier</a></li>
+            <li>&#8250; 🇨🇦  <a href="villes.html">Vancouver</a></li>
+            <li>&#8250; 🇫🇷  <a href="villes.html">Versailles</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <p><a href="index.html">Home</a></p>
+          <p><a href="contact.html">Contact</a></p>
+        </div>
       </div>
-
-      <div class="footer-contact">
-        <a href="contact.html">Contact</a>
-        <h3>Restons en contact</h3>
-        <p>04 11 70 11 11</p>
-        <p>danstafarce@wilders.com</p>
-        <p>6 rue de la creation,75001 Paris</p>
-      </div>
-
-    </div>
   </footer>
 <script src="index.js"></script>
 </body>
-
 </html>
