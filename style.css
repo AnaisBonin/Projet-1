@@ -363,15 +363,16 @@ main {
   } 
 
    article {
+    width: 60%;
+    padding: 1rem;
     font-size: 1rem;
-    border : 1px solid #281101;
     text-align: center;
     display: flex;
     min-height: 15rem;
     max-height: fit-content;
     background-color: #ffb627;
-    width: 60%;
-    padding: 1rem;
+    /* border : 1px solid #281101; */
+    border-radius: 20px;
   }
 
 /* 
