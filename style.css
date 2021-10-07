@@ -313,6 +313,12 @@ top: 0;
     height: 237px;
    }
 
+   @media screen and (min-width:768px){
+    .carousel-item img{
+      width:900px;
+    }
+  }
+
   ::-webkit-scrollbar-track {
     background-color: #F5F5F5;
   }
@@ -369,12 +375,12 @@ top: 0;
     width: 40%;
   }
 
-  /* @media screen and (max-width:640px){
+   @media screen and (min-width:768px){
     .portrait {
       width: 15vw;
       height: 20vh;
     }
-  } */
+  } 
     
   .info-ville {
     display: flex;
