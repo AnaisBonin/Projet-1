@@ -262,12 +262,136 @@ a {
     width: 50%;
     padding: 1rem;
   }
-
 /* 
 **
 ***
 ****
 ***** STYLE VILLE CAROUSEL == END 
+****
+***
+**
+*
+**
+***
+****
+***** STYLE DU TOP == START 
+****
+***
+**
+*
+**
+*** Organisation dans html :
+**
+<div id="carousel">
+        <div class="carousel-img" id="first-image">
+        </div>
+        <div class="carousel-img hidden" id="second-image">
+        </div>
+         </div>
+        <div class="carousel-img hidden" id="third-image">
+        </div>
+        <div class="carousel-img hidden" id="fourth-image">
+        </div>
+        <div class="carousel-img hidden" id="fifth-image">
+        </div>
+
+        <ul>
+            <li id="first-button">1</li>
+            <li id="second-button">2</li>
+            <li id="third-button">3</li>
+            <li id="fourth-button">4</li>
+            <li id="fifth-button">5</li>
+        </ul>
+    </div>
+*/
+
+  #carousel {
+    height: 100%;
+    width: 100%;
+  }
+  .carousel-img {
+    position: relative;
+    text-align: center;
+    color: #ffb627;
+
+  }
+
+   .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  
+
+  
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+  }
+
+  .carousel-text {
+    border: 1px solid #ffb627 ;
+
+  }
+
+
+   /* .flex-container > li {
+    background-color: #ffb627;
+    width: 15px;
+    margin: 10px;
+    text-align: center;
+    line-height: 23px;
+    font-size: 20px;
+    border-radius: 50px;
+    border-style: ridge;
+
+  } */
+
+
+
+  .carousel-img img {
+    width: 100%;
+    height: auto;
+
+  }
+
+  .hidden {
+    display: none;
+  }
+
+
+
+  /* #first-image {
+    background-image: url("/assets/img/Lyon1.jpg") ;
+    
+  } */
+
+  /* #second-image {
+    background-image: url("http://lorempixel.com/g/400/200") ;
+  }
+
+  #third-image {
+    background-image: url("http://lorempixel.com/400/200/sports") ;
+  }
+
+  #fourth-image {
+    background-image: url("http://lorempixel.com/400/200/sports/1") ;
+  }
+
+  #fifth-image {
+    background-image: url("/assets/img/Lyon1.jpg") ;
+  } */
+
+
+/* 
+**
+***
+****
+***** STYLE TOP == END 
 ****
 ***
 **
