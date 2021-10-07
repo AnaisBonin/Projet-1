@@ -22,7 +22,7 @@ body {
 
 h1 {
   text-align: center;
-  margin: 2rem 0;
+  margin: 3rem 0;
   font-size : 2em;
   font-family: 'Laila', sans-serif;
   text-transform: uppercase;
@@ -70,6 +70,18 @@ main {
     background-attachment: fixed;
     background-size: cover;
 }
+@media screen and (min-width:768px) {
+
+p, li {
+  font-size: 1.2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+}
+
 /* 
 **
 ***
@@ -385,7 +397,18 @@ top: 0;
     overflow-x: hidden !important;
   }
 
+  /*
+  *
+  **
+  *** Media Query Carousel Villes
+  **
+  *
+  */
 
+  .carousel-items {
+    max-width: 850px;
+  }
+  
 /*
 **
 ***
@@ -415,6 +438,7 @@ top: 0;
     align-items: flex-start;
     margin-top: 3rem;
     max-width: 410px;
+    min-width: 40%;
   }
   
   .portrait {
@@ -422,8 +446,8 @@ top: 0;
     max-width: 100%;
   }
   .portrait img {
-    max-width: 120px;
-    max-height: 100%;
+    max-width: 100%;
+    max-height: 200px;
     width: auto;
     height: auto;
   }
@@ -432,7 +456,7 @@ top: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 50;
+    min-width: 40%;
     padding-right: 1rem;
   }
   
@@ -484,6 +508,7 @@ top: 0;
   
   .presentation {
     max-width: 850px;
+    align-items: flex-end;
   }
 
   .information {
@@ -503,7 +528,7 @@ top: 0;
   }
 
   .article-presentation {
-    max-width: 50%;
+    max-width: 55%;
   }
   
 }
@@ -825,12 +850,13 @@ iframe-ba {
 .events-and-infos {
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
 .events-and-infos .filet-orange {
   min-height: 300px;
   width: 2px;
-  margin: 0 3rem;
+  margin: 0 2rem;
 }
 
 .events {
