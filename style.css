@@ -12,41 +12,40 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Cormorant Garamond';
+    /* border: 1px solid grey;  */
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 10vw;
-}
-
-p {
-    color: #281101;
+  color: #314150;
+  font-family: 'Cormorant Garamond';
 }
 
 h1 {
-  font-size : 4em;
-  color : rgb(204,88,3);
-  font-family: 'Laila', sans-serif;
-  text-shadow: 1px 1px rgb(40,17,1);
-  margin: 2rem auto;
   text-align: center;
+  margin: 2rem 0;
+  font-size : 2em;
+  font-family: 'Laila', sans-serif;
+  text-transform: uppercase;
+  color : #ff9800;
 }
 
 h2 {
     color: #cc5803;
-    font-family: 'Laila';
+    font-family: 'Laila', sans-serif;
     font-weight: normal;
     font-size: 1.5rem;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-    padding-left: 3rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1rem;
 }
 
-ul, nav {
-  list-style: none;
+h3 {
+  font-family: 'Laila', serif;
+  font-weight: normal;
+  color: #ff9800;
+}
+
+ul, nav, li {
+  list-style-type: none;
 }
 
 a {
@@ -54,14 +53,22 @@ a {
   cursor: pointer;
 }
 
+main {
+  padding: 0 7vw;
+}
+
 .space-before {
     margin-top: 3rem; 
 }
 
 .filet-orange {
-    margin: 0 15vw;
-    width: 70vw;
-    border-bottom: 2px solid #cc5803;
+    margin: 2.5rem 0;
+    width: 100%;
+    height: 2px;
+    background-color: #FACA15;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(157,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23FACA15'/%3E%3Cstop offset='1' stop-color='%23FFA11B'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1' gradientTransform='rotate(235,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23FFEA17' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FFEA17' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23FFEA17' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FFEA17' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.51'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
 }
 /* 
 **
@@ -100,6 +107,7 @@ a {
     text-align: right;
 }
 
+
 /* 
 **
 ***
@@ -116,42 +124,58 @@ a {
 ****
 ***
 **
+*
+**
+*** Construction html
+**
+*
+  <nav class="nav-container">
+    <ul>
+      <li><a href="index.html">Home</a></li> * 3
 */
 
 .nav-container {
-  width: 100%;
-  height: 40px;
-  background-color: #e2711d;
+  width: 100vw;
+  height: 3em;
+  padding: 1rem 2rem;
+  background-color: #FACA15;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(157,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23FACA15'/%3E%3Cstop offset='1' stop-color='%23FFA11B'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1' gradientTransform='rotate(235,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23FF8A37' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FF8A37' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23FF8A37' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FF8A37' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+
+.nav-container ul {
   display: flex;
-  justify-content: space-between;
-  position: fixed;
-  top: 0;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 100;
+  align-items: center;
+  height: 100%;
 }
 
 .nav-container ul li {
-  display: inline-block;
-  vertical-align: top;
-  padding: 0 8px;
+  padding: 0 1rem;
 }
+
 .nav-container a {
-  text-decoration: none;
   color: white;
+  font-family: 'Laila';
 }
 .nav-container a:hover {
-  color: blue;
+  color:#ffc971;
 }
 
 .nav-container div {
-  margin-top: auto;
-  margin-bottom: auto;
   margin-left: 1em;
 }
 
+.nav-container ul li .current-page {
+  color: #f7deb5;
+}
+
+.sticky {
+position: -webkit-sticky;
+position: sticky;
+top: 0;
+}
 
 /* 
 **
@@ -165,24 +189,134 @@ a {
 **
 ***
 ****
+****** STYLE INDEX = START
+*****
+***
+**
+*/
+
+#slideshow {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  width:100vw;
+  height: 30vh;
+  background-image: url('assets/img/Versailles1.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  animation: slideShow 20s linear infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes slideShow {
+  0% {
+      background-image: url('assets/img/Versailles1.jpeg')
+  }
+  33% {
+      background-image: url('assets/img/Versailles2.jpeg')
+  }
+  66% {
+      background-image: url('assets/img/Versailles3.jpeg')
+  }
+  100% {
+      background-image: url('assets/img/Versailles1.jpeg')
+  }
+}
+
+.index-presentation {
+  margin: 4rem 0;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #FACA15;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(157,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23FACA15'/%3E%3Cstop offset='1' stop-color='%23FFA11B'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1' gradientTransform='rotate(235,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23FFEA17' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FFEA17' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23FFEA17' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FFEA17' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.51'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+
+
+
+.index-main {
+  margin-bottom: 4rem;
+}
+
+.h1-welcome {
+  font-size: 2.5rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+.ronde {
+  border-radius : 50%;
+  width: 35vw;
+  border: 2px solid #ffb627;
+}
+
+.index-cercles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.index-cercle-2 {
+  display:flex;
+  justify-content:space-around;
+  width: 100%;
+}
+.index-cercle-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  width: 100vw;
+  margin: 1rem;
+}
+
+/*
+**
+***
+****
+***** STYLE INDEX == END
+****
+***
+**
+*
+**
+***
+****
 ***** STYLE VILLE CAROUSEL == START 
 ****
 ***
 **
 */
+
 .carousel-items {
     display: flex;
     overflow-x: scroll;
     flex: 1 0 250px;
-    padding: 1rem 0;
-    margin-left: 1rem;
     scroll-snap-align: start;
     scroll-snap-type: x mandatory;
   }
 
   .carousel-item {
-    flex: 1 0 250px;
-    margin-left: 1rem;
+    flex: 1 0 100%;
+    max-width:100%;
+    max-height:100%;
+    margin: 0 0.5rem;
+  }
+
+  .carousel-item img {
+    max-width: 100%;
+    height: 237px;
+   }
+
+   @media screen and (min-width:768px){
+    .carousel-item img{
+      width:900px;
+    }
   }
 
   ::-webkit-scrollbar-track {
@@ -199,74 +333,85 @@ a {
     border-radius: 3px;
   }
   
-  
   .carousel:hover {
     max-width: 100% !important;
     overflow-x: hidden !important;
   }
 
-  .carousel img {
-    width: 500px;
-    height: 330px;
-   }
+/*
+**
+***
+****
+***** STYLE VILLE CAROUSSEL == END
+****
+***
+**
+*
+**
+***
+****
+***** STYLE VILLE PRESENTATION == START 
+****
+***
+**
+*/
 
   .presentation {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 5rem;
+    margin: 3rem 0;
+  }
+
+  .portrait img {
+    width: 80%;
+    height: auto;
   }
 
   .information {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 15rem;
+    width: 40%;
   }
 
-  .portrait {
-    background-size: cover;
-    background-position:center;
-    width: 20vw;
-    height: 20vh;
-    background-image: url("assets/img/woman.jpg");
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  @media screen and (max-width:640px){
+   @media screen and (min-width:768px){
     .portrait {
       width: 15vw;
       height: 20vh;
     }
-  }
+  } 
     
   .info-ville {
     display: flex;
+    margin: 0.5rem 1rem;
   }
 
   .info-ville svg {
-    height: 1.5rem; 
-    width: 4rem;
+    width: 1.5rem;
+    margin-right: 0.5rem;
   } 
 
    article {
-    font-size: 1.4rem;
-    border : solid;
+    width: 60%;
+    padding: 1.5rem;
+    font-size: 1rem;
     text-align: center;
     display: flex;
     min-height: 15rem;
     max-height: fit-content;
-    background-color: #ffb627;
-    width: 50%;
-    padding: 1rem;
+    background-color: #FACA15;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(157,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23FACA15'/%3E%3Cstop offset='1' stop-color='%23FFA11B'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1' gradientTransform='rotate(235,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23FFEA17' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FFEA17' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23FFEA17' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FFEA17' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.51'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+    /* border : 1px solid #281101; */
+    border-radius: 5px;
   }
 /* 
 **
 ***
 ****
-***** STYLE VILLE CAROUSEL == END 
+***** STYLE VILLE PRESENTATION == END 
 ****
 ***
 **
@@ -274,124 +419,56 @@ a {
 **
 ***
 ****
-***** STYLE DU TOP == START 
+***** STYLE TOP 5 == START 
 ****
 ***
 **
-*
-**
-*** Organisation dans html :
-**
-<div id="carousel">
-        <div class="carousel-img" id="first-image">
-        </div>
-        <div class="carousel-img hidden" id="second-image">
-        </div>
-         </div>
-        <div class="carousel-img hidden" id="third-image">
-        </div>
-        <div class="carousel-img hidden" id="fourth-image">
-        </div>
-        <div class="carousel-img hidden" id="fifth-image">
-        </div>
-
-        <ul>
-            <li id="first-button">1</li>
-            <li id="second-button">2</li>
-            <li id="third-button">3</li>
-            <li id="fourth-button">4</li>
-            <li id="fifth-button">5</li>
-        </ul>
-    </div>
 */
 
-  #carousel {
-    height: 100%;
-    width: 100%;
-  }
-  .carousel-img {
-    position: relative;
-    text-align: center;
-    color: #ffb627;
+.top-5 {
+  margin: 3rem 0;
+}
 
-  }
-
-   .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  
-
-  
-  .flex-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-
-  }
-
-  .carousel-text {
-    border: 1px solid #ffb627 ;
-
-  }
+.top-5 p {
+  color: #314150;
+  font-size: 3rem;
+  min-height: 10rem;
+  text-align: center;
+}
 
 
-   /* .flex-container > li {
-    background-color: #ffb627;
-    width: 15px;
-    margin: 10px;
-    text-align: center;
-    line-height: 23px;
-    font-size: 20px;
-    border-radius: 50px;
-    border-style: ridge;
+#carousel {
+  height: 100%;
+  width: 100%;
+}
+.carousel-img {
+  position: relative;
+  text-align: center;
+  color: #ffb627;
 
-  } */
+}
 
+.carousel-img img {
+  width: 100%;
+  height: auto;
 
+}
 
-  .carousel-img img {
-    width: 100%;
-    height: auto;
+.hidden {
+  display: none;
+}
 
-  }
+.carousel-text {
+  border: 1px solid #ffb627 ;
 
-  .hidden {
-    display: none;
-  }
-
-
-
-  /* #first-image {
-    background-image: url("/assets/img/Lyon1.jpg") ;
-    
-  } */
-
-  /* #second-image {
-    background-image: url("http://lorempixel.com/g/400/200") ;
-  }
-
-  #third-image {
-    background-image: url("http://lorempixel.com/400/200/sports") ;
-  }
-
-  #fourth-image {
-    background-image: url("http://lorempixel.com/400/200/sports/1") ;
-  }
-
-  #fifth-image {
-    background-image: url("/assets/img/Lyon1.jpg") ;
-  } */
+}
 
 
 /* 
 **
 ***
 ****
-***** STYLE TOP == END 
+***** STYLE TOP 5 == END 
 ****
 ***
 **
@@ -425,13 +502,28 @@ a {
 */
 
 .bonnes-adresses {
-    background-color: #ffb627;
     width: 100vw;
-    padding: 1rem;
+    padding: 2rem 1rem;
+    margin: 0 -7vw;
+    background-color: #FACA15;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(157,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23FACA15'/%3E%3Cstop offset='1' stop-color='%23FFA11B'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1' gradientTransform='rotate(235,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23FF8A37' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FF8A37' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23FF8A37' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FF8A37' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-boxes-ba {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .box-bonnes-adresses {
     width: 90vw;
+    max-width: 100%;
     padding: 1rem 0;
 }
 
@@ -464,16 +556,109 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 80vw;
+    min-width: 80vw; 
 }
 
 iframe {
-    width:100%;
-    height: 50vh;
+    width: 100%;
+    height: auto;
     margin: 1rem;
 }
 
+iframe-ba {
+  width: 100%;
+}
 
-/* 
+/*
+*
+*** MEDIA QUERY Bonnes adresses
+*
+*/
+
+@media screen and (min-width: 768px) {
+  
+  .bonnes-adresses {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .container-boxes-ba {
+    display: flex;
+    justify-content: space-between;
+    width: 57vw;
+    max-width: 100%;
+    margin-left: 4vw;
+  }
+  
+  .container-boxes-ba h2 {
+    width: 90%;
+    text-align: left;
+  }
+
+  .box-bonnes-adresses {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }  
+  
+  .box-ba-intro-adresses {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1rem;;
+  }
+  
+  .box-ba-intro-adresses p{
+    text-align: left;
+    padding-left: 1rem;
+    min-width: 70%;
+    max-width: 70%;
+  }
+
+  .box-ba-intro-adresses ul {
+    min-width: 30%;
+    max-width: 30%;
+    text-align: left;
+  }
+  
+  .flex-cross div {
+    padding: 0 1rem;
+  }
+
+  .flex-main div {
+    padding-right: 1rem;
+  }
+  
+  .adresses {
+    padding-left: 1rem;
+    min-width: 10rem;
+    max-width: fit-content;
+    margin: 0;
+  }
+  
+  .map-villes {
+    max-width: 100%;
+    min-width: 0;
+    width: 43vw;
+    padding-top: 3rem;
+    margin: 1rem 0;
+  }
+
+  .iframe-ba {
+    width: 100%;
+    height: 50vh;
+  }
+
+  /* #map {
+    height: 400px;
+    width: 100%;
+    background-color: grey;
+  } */
+    
+  }
+  
+  /* 
 **
 ***
 ****
@@ -503,30 +688,90 @@ iframe {
         <p class="info-event">
 */
 
+.events{
+  padding-top: 3rem;
+  max-width: 500px;
+}
+
+.box-events {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
 .box-event {
-    margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  max-width: 550px; 
 }
 
 .date-event {
     display: flex;
+    justify-content: center;
     align-items: center;
-    width: 3.5rem;
-    height: 3.5rem;
+    box-sizing: content-box;
+    max-width: 3.8rem;
+    min-width: 3.8rem;
+    max-height: 3.8rem;
+    min-height: 3.8rem;
+    background-color: #FF9C13;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23ffac11' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23ffbc0f' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23fecc0e' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23fedc0c' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23FEEC0A' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
     border-radius: 50%;
-    background-color: #cc5803;
-    border: 2px dotted #281101;
-}
+    border: 2px dotted white; 
+  }
 
 .jour-event {
     text-align: center;
-    color: #ffb627;
-    font-size: 1.2rem;
+    color: #3d4852;
+    font-size: 1.1rem;
+    font-family: 'Laila';
+    line-height: 1rem;
 }
 
 .info-event {
-    padding-right: 15vw;
-    padding-left: 1rem;
+    padding-right: 5vw;
+    padding-left: 1.5rem;
 }
+
+/*
+*
+**
+*** Media Query Events & Infos
+**
+*
+*/
+
+
+@media screen and (min-width: 768px) {
+
+.events-and-infos {
+  display: flex;
+  align-items: center;
+}
+
+.events-and-infos .filet-orange {
+  min-height: 300px;
+  width: 2px;
+  margin: 0 3rem;
+}
+
+.events {
+  width: 55%;
+}
+
+.plus-infos {
+  min-height: 100%;
+  max-height: 100%;
+  margin-top: 0;
+}
+
+}
+
+
 
 /* 
 **
@@ -558,8 +803,23 @@ iframe {
             </div>
 */
 
-  
-  /*!!!!!!!!!!!!!!!! ECRIRE Code LIENS EXTERNES  */
+.plus-infos{
+  margin: 2rem 0;
+}
+
+.box-info {
+  align-items: center;
+}
+
+.lien-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.5rem;
+}
+
+.lien-info a:hover {
+  color: #ff9800;
+}
 
 
 /* 
@@ -580,33 +840,24 @@ iframe {
 **
 */
 
-.main {
-  display: flex;
-  position: relative;
-  top: 100px;
-  justify-content: space-around;
-  flex-wrap: wrap;
+.contacts {
+  padding: 3rem 0;
 }
 
 .contact-us {
-  padding: 0 16px;
-  width: 100%;
+  margin-bottom: 2rem;
 }
 
-.contact-us h3, .contact-us label {
-  padding-bottom: 1rem;
+form label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  color: #cc5803;
 }
 
-.contact-us label[for="name"] {
-  padding-top: 1rem;
-}
-
-form input {
-  padding: 8px;
-  line-height: 16px;
+form input, form select {
   display: block;
-  width: 95%;
-  margin-bottom: 20px;
+  min-width: 60%;
+  background-color: white;
 }
 
 form textarea {
@@ -615,46 +866,42 @@ form textarea {
   margin-bottom: 20px;
 }
 
-form label {
-  display: inline-block;
-  margin-bottom: 10px;
+form input, form textarea, form select {
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  line-height: 1rem;
+  border-color: #ffc971;
+  color: #314150;
+  border-radius: 5px;
 }
 
-.button {
-  width: 80%;
-  float: right;
+form #submit-button {
+  min-width: 7rem;
+  background-color: #ff9800;
+  border: 0;
+  color: white;
+  border-radius: 20px;
 }
 
-.map h3 {
-  padding-bottom: 16px;
+::placeholder, select option {
+  color: #ffc971;
 }
 
-.contenu-footer {
-  bottom: 0;
-  position: fixed;
-  background-color: #e2711d;
+.map {
+  margin-top: 4rem;
+
+}
+
+.map-container {
+  margin: 1rem 0;
+}
+
+.map-container iframe {
   width: 100%;
-  box-sizing: content-box;
-  border: solid dashed #0000;
-  display: flex;
-  justify-content: space-between;
-  padding: 8px;
+  height: 15rem;
+  border: 0;
+  margin: 0;
 }
-
-.footer-contact {
-  width: 50%;
-}
-.liste-des-villes {
-  display: flex;
-  flex-flow: column wrap;
-  height: 100%;
-}
-
-.liste-des-villes li {
-  margin-right: 32px;
-}
-
-
 
 /*
 *
@@ -669,13 +916,82 @@ form label {
 **
 ***
 ****
+***** STYLE FOOTER == START
+****
+***
+**
+*/
+
+footer {
+  width: 100vw;
+  padding: 2rem;
+  background-color: #FACA15;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(157,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23FACA15'/%3E%3Cstop offset='1' stop-color='%23FFA11B'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1' gradientTransform='rotate(235,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23FF8A37' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FF8A37' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23FF8A37' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FF8A37' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  font-family: 'Laila';
+}
+
+footer h3 {
+  font-weight: normal;
+  font-size: 1.1rem;
+}
+
+.contenu-footer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contenu-footer-index {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-contact {
+  width: 35%;
+  line-height: 2.5rem;
+}
+
+.liste-des-villes {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+  margin-right: 32px;
+  padding-left: 1rem;
+  line-height: 2rem;
+}
+
+footer a {
+  font-family: 'Laila';
+  color: white;
+}
+
+footer a:hover {
+  color: #ffb627;
+}
+
+
+/*
+*
+**
+***
+****
+***** STYLE FOOTER == END
+****
+***
+**
+*
+**
+***
+****
 ***** MEDIA QUERY == START
 ****
 ***
 **
 */ 
 
-@media screen and (min-width: 860px) {
+/* @media screen and (min-width: 860px) {
   .contact-us {
     width: 30%;
   }
@@ -696,73 +1012,9 @@ form label {
     justify-content: space-between;
     padding: 8px;
   }
-}
+} */
 
 /* 
-
-Media Query == END
-
-STYLE INDEX = START*/
-
-#slideshow {
-  display: flex;
-  align-items:center;
-  justify-content: center;
-  width:100%;
-  height: 30vh;
-  background-position: center center;
-  background-size:cover;
-  background-repeat:no-repeat;
-  backface-visibility: hidden;
-  animation: slideShow 20s linear infinite;
-  animation-timing-function: ease-in-out;
-  background-color: url('images/Versailles1.jpeg');
-}
-
-@keyframes slideShow {
-  0% {
-      background-image: url('images/Versailles1.jpeg')
-  }
-  33% {
-      background-image: url('images/Versailles2.jpeg')
-  }
-  66% {
-      background-image: url('images/Versailles3.jpeg')
-  }
-  100% {
-      background-image: url('images/Versailles1.jpeg')
-  }
-}
-
-#presentation {
-  display: inline-block;
-  width: 80%;
-  margin-left:10%;
-  margin-right:10%;
-  margin-top: 0.3rem;
-  margin-bottom: 0.3rem;
-  background-color: rgb(255,182,39);
-  font-family: 'Cormorant Garamond', serif;
-  text-align:justify;
-  padding: 0.7rem;
-
-}
-
-.ronde {
-  border-radius : 50%;
-  width:25%;
-}
-
-#liens1 {
-  display:flex;
-  justify-content:space-around;
-}
-#liens2 {
-  display:flex;
-  justify-content:center;
-}
-
-/* STYLE INDEX = END
 **
 ***
 ****

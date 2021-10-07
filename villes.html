@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,36 +9,43 @@
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Laila:400,700" rel="stylesheet">
     <title>Ville 1</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Laila:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,700" rel="stylesheet">
 </head>
 <body>
-    <header>
-            <h1>Poitiers</h1>
-            <section class="carousel">
-                <ul class="carousel-items">
-                    <li class="carousel-item">
-                        <img src= "https://cdn.pixabay.com/photo/2016/01/05/11/39/blue-hour-1122374_960_720.jpg"/>
-                    </li>
-                    <li class="carousel-item">
-                        <img src= "https://cdn.pixabay.com/photo/2014/02/04/18/38/poitiers-centre-258250_960_720.jpg"/>
-                    </li>
-                    <li class="carousel-item">
-                        <img src="https://cdn.pixabay.com/photo/2014/02/04/18/13/cathedral-front-258214_960_720.jpg" />
-                    </li>
-                    <li class="carousel-item">
-                        <img src="https://cdn.pixabay.com/photo/2019/08/25/20/01/building-4430222_960_720.jpg" />
-                    </li>
-                    <li class="carousel-item">
-                        <img src="https://cdn.pixabay.com/photo/2013/12/22/17/59/futuroscope-232597_960_720.jpg" />
-                    </li>
-                </ul>
-            </section>
+<header>
+    <nav class="nav-container sticky">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="villes.html" class="current-page"> Villes </a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+    <h1>Poitiers</h1>
+</header>
+<main>
+    <section class="header-ville"
+        <div class="carousel">
+            <ul class="carousel-items">
+                <li class="carousel-item">
+                    <img src= "https://cdn.pixabay.com/photo/2016/01/05/11/39/blue-hour-1122374_960_720.jpg"/>
+                </li>
+                <li class="carousel-item">
+                    <img src= "https://cdn.pixabay.com/photo/2014/02/04/18/38/poitiers-centre-258250_960_720.jpg"/>
+                </li>
+                <li class="carousel-item">
+                    <img src="https://cdn.pixabay.com/photo/2014/02/04/18/13/cathedral-front-258214_960_720.jpg" />
+                </li>
+                <li class="carousel-item">
+                    <img src="https://cdn.pixabay.com/photo/2019/08/25/20/01/building-4430222_960_720.jpg" />
+                </li>
+                <li class="carousel-item">
+                    <img src="https://cdn.pixabay.com/photo/2013/12/22/17/59/futuroscope-232597_960_720.jpg" />
+                </li>
+            </ul>
+        </div>
         <div class="presentation">
                 <div class="information">
                     <div class="portrait">
-
+                        <img src="assets/img/woman.jpg"/>
                     </div>
                     <div class="info-ville">    
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -53,156 +60,156 @@
                         <p>88 291 habitants</p>
                     </div>
                 </div>
-                <article><b>
+                <article><p>
                     Poitiers est une ville de l'ouest de la France. 
                     Son église romane Notre-Dame-la-Grande est connue pour sa façade aux motifs finement sculptés, 
                     narrant des épisodes de la Bible. Pour Noël ou lors des soirées d'été, 
                     l'église devient la toile de fond d'un spectacle lumineux coloré. 
                     Le palais de Poitiers, qui sert de palais de justice, est le site de la salle des Pas perdus, 
-                    un espace de réunion voûté et doté d'imposantes cheminées.             
-                </article></b> 
+                    un espace de réunion voûté et doté d'imposantes cheminées.</p>           
+                </article> 
         </div>
-        <hr />
-
-    </header>
-
-    <section>
+        <div class="filet-orange"></div>
+    </section>
+    <section class="top-5">
         <h2>TOP 5 des choses à voir </h2>
-
         <div id="carousel">
-            <div class="carousel-img">
-                
+            <div class="carousel-img">   
                 <img id="imgtoggle" src="assets/img/analakely1.jpg" alt="analakely1">
             <div class="carousel-text">
                 <p class= "Description1">Exemple Texte1</p>
             </div>
             </div>
- 
-
-        
-        <ul class="flex-container">
-            
+        <ul class="flex-container"> 
             <button id="first-button">1</button>
             <button id="second-button">2</button>
             <button id="third-button">3</button>
             <button id="fourth-button">4</button>
             <button id="fifth-button">5</button>
         </ul>
-        
-        
-
-
     </div>
-
-
-
-    
+    </section>
     <section class="bonnes-adresses">
-        <h2>Bonnes adresses :</h2>
-        <div class="box-bonnes-adresses flex-main">
-            <img src="assets/icones/cocktail-2.svg" alt="icone cocktail" class="ba-icones"/>
-            <div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos nostrum eum illo, atque quidem ipsum eos quo explicabo tenetur dicta expedita cupiditate quam dolorem? Voluptatem temporibus tempora provident mollitia assumenda.</p>
-                <ul class="adresses">
-                    <li>12 rue des maronniers</li>
-                    <li>38500 Voiron</li>
-                    <li>04 76 35 00 00</li>
-                </ul>
+        <div class="container-boxes-ba">
+            <h2>Bonnes adresses</h2>
+            <div class="box-bonnes-adresses flex-main">
+                <img src="assets/icones/cocktail-2.svg" alt="icone cocktail" class="ba-icones"/>
+                <div class="box-ba-intro-adresses">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos nostrum eum illo, atque quidem ipsum eos quo explicabo tenetur dicta expedita cupiditate quam dolorem? </p>
+                    <ul class="adresses">
+                        <li>12 rue des maronniers</li>
+                        <li>38500 Voiron</li>
+                        <li>04 76 35 00 00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box-bonnes-adresses flex-cross">
+                <img src="assets/icones/food.svg" alt="icone cocktail" class="ba-icones"/>
+                <div class="box-ba-intro-adresses">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos nostrum eum illo, atque quidem ipsum eos quo explicabo tenetur dicta expedita cupiditate quam dolorem? </p>
+                    <ul class="adresses">
+                        <li>12 rue des maronniers</li>
+                        <li>38500 Voiron</li>
+                        <li>04 76 35 00 00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box-bonnes-adresses flex-main">
+                <img src="assets/icones/sports.svg" alt="icone cocktail" class="ba-icones"/>
+                <div class="box-ba-intro-adresses">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos nostrum eum illo, atque quidem ipsum eos quo explicabo tenetur dicta expedita cupiditate quam dolorem? </p>
+                    <ul class="adresses">
+                        <li>12 rue des maronniers</li>
+                        <li>38500 Voiron</li>
+                        <li>04 76 35 00 00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box-bonnes-adresses flex-cross">
+                <img src="assets/icones/landscape.svg" alt="icone cocktail" class="ba-icones"/>
+                <div class="box-ba-intro-adresses">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos nostrum eum illo, atque quidem ipsum eos quo explicabo tenetur dicta expedita cupiditate quam dolorem? </p>
+                    <ul class="adresses">
+                        <li>12 rue des maronniers</li>
+                        <li>38500 Voiron</li>
+                        <li>04 76 35 00 00</li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="box-bonnes-adresses flex-cross">
-            <img src="assets/icones/food.svg" alt="icone cocktail" class="ba-icones"/>
-            <div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos nostrum eum illo, atque quidem ipsum eos quo explicabo tenetur dicta expedita cupiditate quam dolorem? Voluptatem temporibus tempora provident mollitia assumenda.</p>
-                <ul class="adresses">
-                    <li>12 rue des maronniers</li>
-                    <li>38500 Voiron</li>
-                    <li>04 76 35 00 00</li>
-                </ul>
-            </div>
-        </div>
-        <div class="box-bonnes-adresses flex-main">
-            <img src="assets/icones/sports.svg" alt="icone cocktail" class="ba-icones"/>
-            <div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos nostrum eum illo, atque quidem ipsum eos quo explicabo tenetur dicta expedita cupiditate quam dolorem? Voluptatem temporibus tempora provident mollitia assumenda.</p>
-                <ul class="adresses">
-                    <li>12 rue des maronniers</li>
-                    <li>38500 Voiron</li>
-                    <li>04 76 35 00 00</li>
-                </ul>
-            </div>
-        </div>
-        <div class="box-bonnes-adresses flex-cross">
-            <img src="assets/icones/landscape.svg" alt="icone cocktail" class="ba-icones"/>
-            <div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos nostrum eum illo, atque quidem ipsum eos quo explicabo tenetur dicta expedita cupiditate quam dolorem? Voluptatem temporibus tempora provident mollitia assumenda.</p>
-                <ul class="adresses">
-                    <li>12 rue des maronniers</li>
-                    <li>38500 Voiron</li>
-                    <li>04 76 35 00 00</li>
-                </ul>
-            </div>
-        </div>
-        <div class="box-bonnes-adresses flex-main">
-            <img src="assets/icones/salad.svg" alt="icone cocktail" class="ba-icones"/>
-            <div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos nostrum eum illo, atque quidem ipsum eos quo explicabo tenetur dicta expedita cupiditate quam dolorem? Voluptatem temporibus tempora provident mollitia assumenda.</p>
-                <ul class="adresses">
-                    <li>12 rue des maronniers</li>
-                    <li>38500 Voiron</li>
-                    <li>04 76 35 00 00</li>
-                </ul>
-            </div>
-        </div>
-        <div class="box-bonnes-adresses flex-cross">
-            <img src="assets/icones/art.svg" alt="icone cocktail" class="ba-icones"/>
-            <div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos nostrum eum illo, atque quidem ipsum eos quo explicabo tenetur dicta expedita cupiditate quam dolorem? Voluptatem temporibus tempora provident mollitia assumenda.</p>
-                <ul class="adresses">
-                    <li>12 rue des maronniers</li>
-                    <li>38500 Voiron</li>
-                    <li>04 76 35 00 00</li>
-                </ul>
-            </div>
-        </div>
-        <div class="map-villes">
-                <iframe width="90vw" height="auto" id="gmap_canvas" src="https://maps.google.com/maps?q=Vancouver&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        <div class="map-villes" id="map" >
+                <iframe class="iframe-ba" id="gmap_canvas" src="https://maps.google.com/maps?q=Vancouver&t=&z=11&ie=UTF8&iwloc=&output=embed"></iframe>
         </div>
     </section>
-    <section class="events space-before">
-            <h2>Evènements a ne pas manquer :</h2>
-            <div class="box-event flex-main">
-                <div class="date-event">
-                    <p class="jour-event">15 <br> Nov</p>
+    <section class="events-and-infos">
+        <section class="events">
+                <h3>Evènements</h3>
+                <div class=box-events>
+                    <div class="box-event">
+                        <div class="date-event">
+                            <p class="jour-event">15 <br> Nov</p>
+                        </div>
+                        <p class="info-event">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae excepturi temporibus facere !</p>
+                    </div>
+                    <div class="box-event">
+                        <div class="date-event">
+                            <p class="jour-event">15 <br> Nov</p>
+                        </div>
+                        <p class="info-event">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae excepturi temporibus facere !</p>
+                    </div>
+                    <div class="box-event">
+                        <div class="date-event">
+                            <p class="jour-event">15 <br> Nov</p>
+                        </div>
+                        <p class="info-event">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae excepturi temporibus facere!</p>
+                    </div>
                 </div>
-                <p class="info-event">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae excepturi temporibus facere !</p>
-            </div>
-            <div class="box-event flex-main">
-                <div class="date-event">
-                    <p class="jour-event">15 <br> Nov</p>
+        </section>
+        <div class="filet-orange"></div>
+        <section class="plus-infos">
+            <h3>Pour plus d'informations</h3>
+            <div class="box-info flex-main">
+                <img src="assets/icones/www.svg" class="ba-icones"/>
+                <div class="lien-info">
+                    <p>Office du tourisme</p>
+                    <p><a>www.url.com</a></p>
                 </div>
-                <p class="info-event">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae excepturi temporibus facere !</p>
             </div>
-            <div class="box-event flex-main">
-                <div class="date-event">
-                    <p class="jour-event">15 <br> Nov</p>
+            <div class="box-info flex-main">
+                <img src="assets/icones/www.svg" class="ba-icones"/>
+                <div class="lien-info">
+                    <p>Office du tourisme</p>
+                    <p><a>www.url.com</a></p>
                 </div>
-                <p class="info-event">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae excepturi temporibus facere!</p>
             </div>
-            <div class="filet-orange"></div>
+            <div class="box-info flex-main">
+                <img src="assets/icones/www.svg" class="ba-icones"/>
+                <div class="lien-info">
+                    <p>Office du tourisme</p>
+                    <p><a>www.url.com</a></p>
+                </div>
+            </div>
+        </section>
     </section>
-    <section class="plus-infos">
-        <h2>Pour plus d'informations :</h2>
-        <div class="box-info flex-main">
-            <img src="assets/icones/games.svg" class="ba-icones"/>
-            <div class="lien-info"></div>
-                <p>Office du tourisme</p>
-                <p><a>Lien URL</a></p>
-            </div>
+</main>
+<footer>
+    <div class="contenu-footer">
+        <div class="footer-villes">
+        <p>Villes :</p>
+        <ul class="liste-des-villes">
+            <li>&#8250; 🇲🇬  <a href="villes.html">Antananavarino</a></li>
+            <li>&#8250; 🇮🇹  <a href="villes.html">Naples</a></li>
+            <li>&#8250; 🇫🇷  <a href="villes.html">Poitier</a></li>
+            <li>&#8250; 🇨🇦  <a href="villes.html">Vancouver</a></li>
+            <li>&#8250; 🇫🇷  <a href="villes.html">Versailles</a></li>
+        </ul>
         </div>
-
-    </section>
-     <script src="index.js"></script>
-     
+        <div class="footer-contact">
+        <p><a href="index.html">Home</a></p>
+        <p><a href="contact.html">Contact</a></p>
+        </div>
+    </div>
+    </footer>
+    <script src="index.js"></script>
 </body>
 </html>

@@ -1,76 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Laila:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Laila:400,700"
+      rel="stylesheet"
+    />
     <title>Welcome</title>
-</head>
-
-<body>
-  <header>
-    <h2>Title</h2>
-    <div class="nav-container">
-      <nav>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-container">
         <ul>
-          <li><a href="">Home</a></li>
-          <li>
-            <a href="" target="_blank"> Villes </a>
-          </li>
-          <li><a href="contact.html" target="_blank">Contact us</a></li>
+          <li><a href="index.html" class="current-page">Home</a></li>
+          <li><a href="villes.html"> Villes </a></li>
+          <li><a href="contact.html">Contact us</a></li>
         </ul>
       </nav>
-    </div>
-  </header>
-
-  <div id="slideshow">
-    <h1>Welcome !</h1>
-</div>
-<div class = "presentation">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum laudantium molestiae cum ratione vitae atque maiores, adipisci aspernatur modi tenetur commodi cupiditate totam, ullam harum consequatur, ea quas sapiente amet!
-    </p>
-</div>
-<div id="liens1">
-    <img class="ronde" src='images/Poitiers1.jpg' alt="Versailles"/>
-    <img class="ronde" src='images/Lyon1.jpg' alt="Lyon"/>
-</div>
-<div id="liens2">
-    <img class="ronde" src='images/Madagascar1.jpg' alt="Versailles"/>
-</div>
-<div id="liens1">
-    <img class="ronde" src='images/Vancouver.jpg' alt="Versailles"/>
-    <img class="ronde" src='images/Versailles4.jpg' alt="Lyon"/>
-</div>
-
-
-  <footer>
-    <div class="contenu-footer">
-
-      <div class="footer-villes">
-        <h3>Nos villes</h3>
-        <ul class="liste-des-villes">
-          <li>🇮🇹<a href="">Naples</a></li>
-          <li>🇲🇬<a href="">Antananavarino</a></li>
-          <li>🇫🇷<a href="">Versailles</a></li>
-          <li>🇫🇷<a href="">Poitier</a></li>
-          <li>🇫🇷<a href="">Grenoble</a></li>
-        </ul>
+      <div id="slideshow">
+        <h1 class="h1-welcome">Welcome</h1>
       </div>
-
-      <div class="footer-contact">
-        <a href="contact.html">Contact</a>
-        <h3>Restons en contact</h3>
-        <p>04 11 70 11 11</p>
-        <p>danstafarce@wilders.com</p>
-        <p>6 rue de la creation,75001 Paris</p>
+    </header>
+    <main class=index-main>
+      <div class="index-presentation">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+          laudantium molestiae cum ratione vitae atque maiores, adipisci
+          aspernatur modi tenetur commodi cupiditate totam, ullam harum
+          consequatur, ea quas sapiente amet!
+        </p>
       </div>
-
-    </div>
-  </footer>
-</body>
-
+      <div class = index-cercles>
+        <div class="index-cercle-2">
+          <img class="ronde" src="assets/img/Poitiers1.jpg" alt="Versailles" />
+          <img class="ronde" src="assets/img/Lyon1.jpg" alt="Lyon" />
+        </div>
+        <div class="index-cercle-1">
+          <img class="ronde" src="assets/img/Madagascar1.jpg" alt="Versailles" />
+        </div>
+        <div class="index-cercle-2">
+          <img class="ronde" src="assets/img/Vancouver.jpg" alt="Versailles" />
+          <img class="ronde" src="assets/img/Versailles4.jpg" alt="Lyon" />
+        </div>
+      </div>
+    </main>
+    <footer class="footer-index">
+      <div class="contenu-footer-index">
+          <p class="footer-index"><a href="index.html">Home</a></p>
+          <p class="footer-index"><a href="contact.html">Contact</a></p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
