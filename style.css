@@ -340,16 +340,15 @@ top: 0;
 .carousel-items {
     display: flex;
     overflow-x: scroll;
-    flex: 1 0 800px;
     scroll-snap-align: start;
     scroll-snap-type: x mandatory;
+    padding-bottom: 1rem;
   }
 
   .carousel-item {
-    flex: 1 0 100%;
-width: 100%;
-height: auto;
+    flex: 1 0 95%;
     margin: 0;
+    padding-left: 15vw;
   }
 
   .carousel-item img {
@@ -375,23 +374,6 @@ height: auto;
     overflow-x: hidden !important;
   }
 
-/*
-*
-**
-*** Media Query Villes presentation
-**
-*
-*/
-
-
-  @media screen and (min-width:768px){
-    /* .carousel-item img{
-      width:900px;
-      min-height: auto;
-      max-height: auto;
-    } */
-
-  }
 
 /*
 **
@@ -410,16 +392,28 @@ height: auto;
 ***
 **
 */
+.header-ville {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
   .presentation {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 3rem 0;
+    margin-top: 3rem;
+    max-width: 410px;
   }
-
+  
+  .portrait {
+    min-width: 100%;
+    max-width: 100%;
+  }
   .portrait img {
-    width: 80%;
+    max-width: 120px;
+    max-height: 100%;
+    width: auto;
     height: auto;
   }
 
@@ -427,18 +421,19 @@ height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 40%;
+    width: 50;
+    padding-right: 1rem;
+  }
+  
+  .langue-habitants {
+    display: flex;
+    flex-direction: column;
   }
 
-   @media screen and (min-width:768px){
-    .portrait {
-      width: 15vw;
-      height: 20vh;
-    }
-  } 
-    
   .info-ville {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     margin: 0.5rem 1rem;
   }
 
@@ -447,21 +442,60 @@ height: auto;
     margin-right: 0.5rem;
   } 
 
-   article {
-    width: 60%;
+  .article-presentation {
     padding: 1.5rem;
     font-size: 1rem;
     text-align: center;
-    display: flex;
-    min-height: 15rem;
     max-height: fit-content;
     background-color: #FACA15;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(157,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23FACA15'/%3E%3Cstop offset='1' stop-color='%23FFA11B'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1' gradientTransform='rotate(235,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23FFEA17' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FFEA17' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23FFEA17' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FFEA17' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.51'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
-  background-attachment: fixed;
-  background-size: cover;
-    /* border : 1px solid #281101; */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(157,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23FACA15'/%3E%3Cstop offset='1' stop-color='%23FFA11B'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1' gradientTransform='rotate(235,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23FFEA17' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FFEA17' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23FFEA17' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FFEA17' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.51'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
     border-radius: 5px;
   }
+
+
+/*
+*
+**
+*** Media Query Villes presentation
+**
+*
+*/
+
+
+@media screen and (min-width:768px){
+  .carousel-item img{
+    width:900px;
+    min-height: auto;
+    max-height: auto;
+  }
+  
+  .presentation {
+    max-width: 850px;
+  }
+
+  .information {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    max-width: 50%;
+  }
+
+  .portrait {
+    min-width: 0;
+  }
+
+  .portrait img {
+    max-width: none;
+    max-height: 210px;
+  }
+
+  .article-presentation {
+    max-width: 50%;
+  }
+  
+}
 
 /* 
 **
