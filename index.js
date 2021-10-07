@@ -17,27 +17,27 @@ const btn5 = document.getElementById("fifth-button")
 
 btn1.addEventListener("click",() => {
 img.src = "assets/img/andohalo.jpg"
-  Txt.innerHTML = "Exemple Texte1"
+  Txt.innerHTML = "Description image 1 : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores excepturi a nesciunt voluptatem laboriosam, sunt quisquam odit ea, vero ad repellendus. Dolorem eius accusantium dolores perspiciatis est ipsum reprehenderit sed?"
  })
  btn2.addEventListener("click",() => {
    img.src = "assets/img/anosy.jpg"
-   Txt.innerHTML = "Exemple Texte2"
+   Txt.innerHTML = "Description image 2 : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores excepturi a nesciunt voluptatem laboriosam, sunt quisquam odit ea, vero ad repellendus. Dolorem eius accusantium dolores perspiciatis est ipsum reprehenderit sed?"
 
  })
  btn3.addEventListener("click",() => {
  img.src = "assets/img/analakely.jpg"
- Txt.innerHTML = "Exemple Texte3"
+ Txt.innerHTML = "Description image 3 : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores excepturi a nesciunt voluptatem laboriosam, sunt quisquam odit ea, vero ad repellendus. Dolorem eius accusantium dolores perspiciatis est ipsum reprehenderit sed?"
 
   
  })
 btn4.addEventListener("click",() => {
    img.src = "assets/img/garemod.jpg"
-   Txt.innerHTML = "Exemple Texte4"
+   Txt.innerHTML = "Description image 4 : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores excepturi a nesciunt voluptatem laboriosam, sunt quisquam odit ea, vero ad repellendus. Dolorem eius accusantium dolores perspiciatis est ipsum reprehenderit sed?"
 
  })
  btn5.addEventListener("click",() => {
    img.src = "assets/img/andohalo2.jpg"
-   Txt.innerHTML = "Exemple Texte5"
+   Txt.innerHTML = "Description image 5 : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores excepturi a nesciunt voluptatem laboriosam, sunt quisquam odit ea, vero ad repellendus. Dolorem eius accusantium dolores perspiciatis est ipsum reprehenderit sed?"
 
 
  })
