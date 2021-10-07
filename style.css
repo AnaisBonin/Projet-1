@@ -249,6 +249,9 @@ top: 0;
 }
 
 .index-main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   margin-bottom: 4rem;
 }
 
@@ -293,13 +296,15 @@ top: 0;
 @media screen and (min-width:768px) {
   .index-cercles {
     display:grid;
-    margin-left:5vw;
     /*width:100%;*/
     grid-template-areas:
     "a a g g c c"
     ". d d b b .";
   }
 
+  .ronde {
+    margin: 1rem;
+  }
  
   .ronde:nth-child(1) {
     grid-area:a;
@@ -330,7 +335,7 @@ top: 0;
 
   .index-presentation {
     margin: 3rem 0;
-    width:52vw;
+    width: 52vw;
     margin-left:13vw;
     margin-right:13vw;
     padding: 1rem;
