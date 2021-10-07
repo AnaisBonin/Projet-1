@@ -490,6 +490,7 @@ top: 0;
   }
 
 
+
 /*
 *
 **
@@ -560,6 +561,33 @@ top: 0;
   font-size: 3rem;
   min-height: 10rem;
   text-align: center;
+}
+
+
+#carousel {
+  height: 100%;
+  width: 100%;
+}
+.carousel-img {
+  position: relative;
+  text-align: center;
+  color: #ffb627;
+
+}
+
+.carousel-img img {
+  width: 100%;
+  height: auto;
+
+}
+
+.hidden {
+  display: none;
+}
+
+.carousel-text {
+  border: 1px solid #ffb627 ;
+
 }
 
 
