@@ -18,10 +18,18 @@
   </head>
   <body>
     <header>
-      <nav class="nav-container">
+      <nav class="nav-container" id="nav_ul">
         <ul>
-          <li><a href="index.html" class="current-page">Home</a></li>
-          <li><a href="villes.html"> Villes </a></li>
+          <li><a href="index.html">Home</a></li>
+          <li id="villes"><a href="index.html">Villes</a>
+            <ul class="listev">
+              <li><a href="">Anatananavarino</a></li>
+              <li><a href="">Naples</a></li>
+              <li><a href="">Poitiers</a></li>
+              <li><a href="">versailles</a></li>
+              <li><a href="">Vancouver</a></li>
+            </ul>
+          </li>
           <li><a href="contact.html">Contact us</a></li>
         </ul>
       </nav>
@@ -52,6 +60,15 @@
           <p class="footer-lien-index"><a href="contact.html">Contact</a></p>
         </div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </main>
+  <footer class="footer-index">
+    <div class="contenu-footer-index">
+      <p class="footer-index"><a href="index.html">Home</a></p>
+      <p class="footer-index"><a href="contact.html">Contact</a></p>
+    </div>
+    </div>
+  </footer>
+  <script src="index.js"></script>
+</body>
 </html>
