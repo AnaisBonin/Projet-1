@@ -39,6 +39,5 @@ btn4.addEventListener("click",() => {
    img.src = "assets/img/andohalo2.jpg"
    Txt.innerHTML = "Andohalo ou la haute, très belle endroit pour avoir une vue panoramique sur tout la ville"
 
-
  })
 
