@@ -17,27 +17,27 @@ const btn5 = document.getElementById("fifth-button")
 
 btn1.addEventListener("click",() => {
 img.src = "assets/img/andohalo.jpg"
-  Txt.innerHTML = "Description image 1 : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores excepturi a nesciunt voluptatem laboriosam, sunt quisquam odit ea, vero ad repellendus. Dolorem eius accusantium dolores perspiciatis est ipsum reprehenderit sed?"
+  Txt.innerHTML = "Andohalo : dans les hauteurs de la ville, proche du palaie de la reine. Permet d'avoir une vue magnifique sur le couché du soleil "
  })
  btn2.addEventListener("click",() => {
    img.src = "assets/img/anosy.jpg"
-   Txt.innerHTML = "Description image 2 : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores excepturi a nesciunt voluptatem laboriosam, sunt quisquam odit ea, vero ad repellendus. Dolorem eius accusantium dolores perspiciatis est ipsum reprehenderit sed?"
+   Txt.innerHTML = "Anosy : Ancien emplacement de l'ancienne palaie de la reine, devenu aujourd'hui devenu l'emplacement d'une status d'ange sous lequel repose des anciens soldats"
 
  })
  btn3.addEventListener("click",() => {
  img.src = "assets/img/analakely.jpg"
- Txt.innerHTML = "Description image 3 : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores excepturi a nesciunt voluptatem laboriosam, sunt quisquam odit ea, vero ad repellendus. Dolorem eius accusantium dolores perspiciatis est ipsum reprehenderit sed?"
+ Txt.innerHTML = "Analakely : C'est une ancienne petite fôret, Anala = forêt, kely = petite"
 
   
  })
 btn4.addEventListener("click",() => {
    img.src = "assets/img/garemod.jpg"
-   Txt.innerHTML = "Description image 4 : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores excepturi a nesciunt voluptatem laboriosam, sunt quisquam odit ea, vero ad repellendus. Dolorem eius accusantium dolores perspiciatis est ipsum reprehenderit sed?"
+   Txt.innerHTML = "La gare d'Analakely : 1ere gare construite à Madagascar, avec un design français"
 
  })
  btn5.addEventListener("click",() => {
    img.src = "assets/img/andohalo2.jpg"
-   Txt.innerHTML = "Description image 5 : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores excepturi a nesciunt voluptatem laboriosam, sunt quisquam odit ea, vero ad repellendus. Dolorem eius accusantium dolores perspiciatis est ipsum reprehenderit sed?"
+   Txt.innerHTML = "Andohalo ou la haute, très belle endroit pour avoir une vue panoramique sur tout la ville"
 
 
  })
