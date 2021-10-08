@@ -2,7 +2,7 @@ function clickAlert() {
   alert("Envoyé");
 }
 
-/*bouton pour le top */
+/*bouton pour le top*/
 
 const img = document.getElementById(`imgtoggle`)
 
